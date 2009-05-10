@@ -35,11 +35,11 @@ $controllers = array(
 
 if(array_key_exists($url['controller'], $controllers))
 {
-	include './includes/controllers/'.$controllers[$url['controller']];
+	include './controllers/'.$controllers[$url['controller']];
 }
 else
 {
 	// invalid controller, choosing default
-	include './includes/controllers/default.php';
+	include './controllers/default.php';
 }
 ?>
